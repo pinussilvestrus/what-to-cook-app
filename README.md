@@ -1,5 +1,7 @@
 # what-to-cook-app
 
+[![CI](https://github.com/pinussilvestrus/what-to-cook-app/workflows/CI/badge.svg)](https://github.com/pinussilvestrus/what-to-cook-app/actions?query=workflow%3ACI)
+
 Simple recipe suggestion application which works on top of a [Camunda Cloud](https://camunda.com/en/products/cloud/) cluster.
 
 ## Components
