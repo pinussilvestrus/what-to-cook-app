@@ -47,9 +47,8 @@ function getNewRecipes() {
 }
 
 function getRandom(array, number) {
-  const length = array.length;
-
-  let result = new Array(number),
+  let length = array.length;
+    result = new Array(number),
     taken = new Array(length);
 
   if (number > length) {
