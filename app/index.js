@@ -36,7 +36,7 @@ const router = new Router();
 
 router.get('/fetch', async (context) => {
 
-  console.log('executing process..');
+  console.log('executing process ...');
 
   // execute workflow
   const result = await zbc.createWorkflowInstanceWithResult({
@@ -48,6 +48,18 @@ router.get('/fetch', async (context) => {
   } = result;
 
   context.body = variables.recipes;
+});
+
+router.get('/ping', async (context) => {
+
+  console.log('ping cluster ...');
+
+  try {
+    await zbc.topology();
+    context.status = 200;
+  } catch (err) {
+    context.status = err.status || 500;
+  }
 });
 
 app.use(router.routes());

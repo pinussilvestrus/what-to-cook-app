@@ -1,4 +1,6 @@
 <script>
+	import { onMount } from 'svelte';
+
 	import RecipeCard from './components/RecipeCard.svelte';
 
 	import Diagram from './components/Diagram.svelte';
@@ -15,19 +17,31 @@
 
 	const camundaOperateUrl = `https://${clusterId}.operate.camunda.io`;
 
+ 	// state
+	let recipes = [];
+	let clusterIsReady = false;
+
 	const fetchRecipes = async () => {
 		const response = await fetch(`${serverUrl}/fetch`);
 
 		if(response.ok) {
 			recipes = await response.json();
 		}
-	}
+	};
 
 	const handleReloadRecipes = (event) => {
 		fetchRecipes();
-	}
+	};
 
-	let recipes = [];
+	const checkClusterStatus = async () => {
+		const response = await fetch(`${serverUrl}/ping`);
+
+		clusterIsReady = response.ok;
+	};
+
+	onMount(async () => {
+		await checkClusterStatus();
+	});
 </script>
 
 <style lang="scss">
@@ -75,7 +89,7 @@
 
 		.diagram-box {
  			width: 33%;
-			border: 1px solid #efefef;
+			border: 1px solid #3c85ff;
 			margin: 2rem 0;
     	padding: 2rem;
 			background: white;
@@ -83,6 +97,21 @@
 
 		a {
 			color: white;
+		}
+
+		.cluster-state {
+			width: 12px;
+			height: 12px;
+			border-radius: 100%;
+			display: inline-block;
+			background-color: #F67476;
+			margin-right: 12px;
+			position: relative;
+			top: 2px;
+
+			&.ready {
+				background-color: #10d070;
+			}
 		}
 	}
 
@@ -120,6 +149,7 @@
 				href="{camundaCloudUrl + '/cluster/' + clusterId}" 
 				target="_blank" 
 				class="pill">{clusterId}</a>
+				<span class="cluster-state" class:ready={clusterIsReady}></span>
 		</p>
 
 		<div class="diagram-box">
