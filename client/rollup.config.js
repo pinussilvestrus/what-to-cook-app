@@ -9,7 +9,6 @@ import { string } from 'rollup-plugin-string';
 import json from '@rollup/plugin-json';
 import injectProcessEnv from 'rollup-plugin-inject-process-env';
 
-
 require('dotenv').config({ path: '../.env' });
 
 const production = !process.env.ROLLUP_WATCH;

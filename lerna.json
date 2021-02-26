@@ -1,6 +1,8 @@
 {
   "packages": [
-    "client"
+    "client",
+    "worker",
+    "app"
   ],
   "version": "0.0.0"
 }

@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@koa/router": "^10.0.0",
+    "dotenv": "^8.2.0",
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0",
+    "zeebe-node": "^0.26.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
