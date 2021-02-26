@@ -1,10 +1,10 @@
 <script>
 
-  export let receipt = {};
+  export let recipe = {};
 </script>
 
 <style lang="scss">
-  .receipt {
+  .recipe {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 
@@ -22,12 +22,12 @@
   }
 </style>
 
-{#if receipt.id}
-  <div class="receipt">
-    <a href="{receipt.url}" target="_blank">
-      <img src={receipt.image} alt={receipt.name} style="width:100%">
+{#if recipe.id}
+  <div class="recipe">
+    <a href="{recipe.url}" target="_blank">
+      <img src={recipe.image} alt={recipe.name} style="width:100%">
       <div class="container">
-        <p>{receipt.name}</p>
+        <p>{recipe.name}</p>
       </div>
     </a>
   </div>

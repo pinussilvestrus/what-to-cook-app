@@ -1,10 +1,12 @@
 {
   "name": "what-to-cook-app",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.0",
+  "description": "Simple recipe suggestion application which works on top of a Camunda Cloud cluster",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "lerna bootstrap"
+    "postinstall": "lerna bootstrap",
+    "start": "lerna run start --stream",
+    "all": "lerna run all --stream"
   },
   "repository": {
     "type": "git",

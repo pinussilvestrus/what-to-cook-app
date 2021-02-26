@@ -3,6 +3,8 @@
   "private": "true",
   "version": "1.0.0",
   "scripts": {
+    "all": "run-s build test",
+    "test": "run-s lint",
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "serve": "serve public",

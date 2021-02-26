@@ -9,9 +9,9 @@
       <bpmn:incoming>Flow_1h0ft3f</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_1h0ft3f" sourceRef="Activity_1gecg1i" targetRef="Event_1l8v4te" />
-    <bpmn:serviceTask id="Activity_1gecg1i" name="fetch receipts">
+    <bpmn:serviceTask id="Activity_1gecg1i" name="fetch recipes">
       <bpmn:extensionElements>
-        <zeebe:taskDefinition type="fetch-receipts" />
+        <zeebe:taskDefinition type="fetch-recipes" />
       </bpmn:extensionElements>
       <bpmn:incoming>Flow_1gp83q4</bpmn:incoming>
       <bpmn:outgoing>Flow_1h0ft3f</bpmn:outgoing>

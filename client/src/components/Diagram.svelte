@@ -6,8 +6,6 @@
   const noop = () => {};
 
   const bindListeners = (modeler) => {
-    const canvas = modeler.get('canvas');
-
     modeler.on('import.done', function(event) {
       onDiagramLoaded(modeler);
     });

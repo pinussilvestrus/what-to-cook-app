@@ -1,9 +1,9 @@
 <script>
-	import ReceiptCard from './components/ReceiptCard.svelte';
+	import RecipeCard from './components/RecipeCard.svelte';
 
 	import Diagram from './components/Diagram.svelte';
 
-	import TEST_RECEIPTS from '../../resources/receipts.json';
+	import TEST_RECIPES from '../../resources/recipes.json';
 
 	import diagramXML from '../../resources/diagram.bpmn';
 
@@ -12,7 +12,7 @@
 	const clusterId = process.env.CLOUD_CLUSTER_ID;
 
 	// TODO: fetch from server
-	let receipts = TEST_RECEIPTS;
+	let recipes = TEST_RECIPES;
 
 </script>
 
@@ -33,7 +33,7 @@
 		}
 	}
 
-	.receipts {
+	.recipes {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
  		grid-auto-rows: auto;
@@ -64,9 +64,9 @@
 		<h1>What to cook next week?</h1>
 	</div>
 
-	<div class="receipts">
-		{#each receipts as r}
-			<ReceiptCard receipt={r} />
+	<div class="recipes">
+		{#each recipes as r}
+			<RecipeCard recipe={r} />
 		{/each}
 	</div>
 

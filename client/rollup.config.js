@@ -62,10 +62,10 @@ export default {
 
     json(),
 
-    injectProcessEnv({ 
+    injectProcessEnv({
       CLOUD_CLUSTER_ID: process.env.CLOUD_CLUSTER_ID
-  }),
-    
+    })
+
   ],
   watch: {
     clearScreen: false
