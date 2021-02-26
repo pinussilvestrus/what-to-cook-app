@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Lasagne",
+    "url": "https://www.chefkoch.de/rezepte/745721177147257/Lasagne.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/745721177147257/bilder/668335/crop-600x400/lasagne.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Lachs in Curry-Kokos-Soße mit Brokkolipüree",
+    "url": "https://www.chefkoch.de/rezepte/3313851492239239/Lachs-in-Curry-Kokos-Sosse-mit-Brokkolipueree.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/3313851492239239/bilder/1018806/crop-600x400/lachs-in-curry-kokos-sosse-mit-brokkolipueree.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Bananenbrot",
+    "url": "https://www.chefkoch.de/rezepte/1383051243462081/Bananenbrot.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/1383051243462081/bilder/1325919/crop-600x400/bananenbrot.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Gnocchi-Auflauf",
+    "url": "https://www.chefkoch.de/rezepte/614211161436591/Gnocchi-Auflauf.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/614211161436591/bilder/767036/crop-600x400/gnocchi-auflauf.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Bulgur-Chili",
+    "url": "https://www.chefkoch.de/rezepte/2144781344616344/Bulgur-Chili.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/2144781344616344/bilder/888099/crop-600x400/bulgur-chili.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Bolognese",
+    "url": "https://www.chefkoch.de/rezepte/772011180069862/Die-echte-Sauce-Bolognese.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/772011180069862/bilder/564948/crop-600x400/die-echte-sauce-bolognese.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Vegetarische Tortellini-Pfanne",
+    "url": "https://www.chefkoch.de/rezepte/1504741255948809/Vegetarische-Tortellini-Pfanne.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/1504741255948809/bilder/1029421/crop-600x400/vegetarische-tortellini-pfanne.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Palak Paneer",
+    "url": "https://www.chefkoch.de/rezepte/1430761247928622/Palak-Paneer.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/1430761247928622/bilder/1314148/crop-600x400/palak-paneer.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Hähnchen-Ananas-Curry mit Reis",
+    "url": "https://www.chefkoch.de/rezepte/1069361212490339/Haehnchen-Ananas-Curry-mit-Reis.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/1069361212490339/bilder/1124000/crop-600x400/haehnchen-ananas-curry-mit-reis.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Havanna-Pfanne",
+    "url": "https://www.chefkoch.de/rezepte/291361108164449/Havanna-Pfanne.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/291361108164449/bilder/1135776/crop-600x400/havanna-pfanne.jpg"
+  }
+]
