@@ -7,9 +7,11 @@
 
 	import diagramXML from '../../resources/diagram.bpmn';
 
-	const CAMUNDA_CLOUD_URL = 'https://console.cloud.camunda.io/org/cfdfe9e6-ea43-4e73-848e-314838b25b24/';
-
 	const clusterId = process.env.CLOUD_CLUSTER_ID;
+
+	const orgaId = process.env.CLOUD_ORGA_ID;
+
+	const CAMUNDA_CLOUD_URL = `https://console.cloud.camunda.io/org/${orgaId}/`;
 
 	// TODO: fetch from server
 	let recipes = TEST_RECIPES;

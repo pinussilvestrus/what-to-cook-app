@@ -63,7 +63,8 @@ export default {
     json(),
 
     injectProcessEnv({
-      CLOUD_CLUSTER_ID: process.env.CLOUD_CLUSTER_ID
+      CLOUD_CLUSTER_ID: process.env.CLOUD_CLUSTER_ID,
+      CLOUD_ORGA_ID: process.env.CLOUD_ORGA_ID
     })
 
   ],
