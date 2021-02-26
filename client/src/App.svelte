@@ -11,7 +11,9 @@
 
 	const serverUrl = process.env.camundaCloudUrl || 'http://localhost:3000';
 
-	const camundaCloudUrl = `https://console.cloud.camunda.io/org/${orgaId}/`;
+	const camundaCloudUrl = `https://console.cloud.camunda.io/org/${orgaId}`;
+
+	const camundaOperateUrl = `https://${clusterId}.operate.camunda.io`;
 
 	const fetchRecipes = async () => {
 		const response = await fetch(`${serverUrl}/fetch`);
@@ -31,7 +33,6 @@
 <style lang="scss">
 	main {
 		text-align: center;
-		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
 	}
@@ -67,13 +68,21 @@
 	}
 
 	.cloud-connection {
-		padding: 2rem 3rem;
+		padding: 2rem 3rem 2rem 10rem;
+    text-align: left;
+		background-color: #3c85ff;
+		color: white;
 
 		.diagram-box {
-			margin: auto;
- 			width: 50%;
-			border: 1px solid black;
+ 			width: 33%;
+			border: 1px solid #efefef;
+			margin: 2rem 0;
     	padding: 2rem;
+			background: white;
+		}
+
+		a {
+			color: white;
 		}
 	}
 
@@ -104,13 +113,11 @@
 
 	</div>
 
-	<hr />
-
 	<div class="cloud-connection">
 		<h2>Powered by Camunda Cloud</h2>
 
 		<p>Cluster: <a 
-				href="{camundaCloudUrl + 'cluster/' + clusterId}" 
+				href="{camundaCloudUrl + '/cluster/' + clusterId}" 
 				target="_blank" 
 				class="pill">{clusterId}</a>
 		</p>
@@ -118,5 +125,7 @@
 		<div class="diagram-box">
 			<Diagram xml={diagramXML} />
 		</div>
+
+		<a href="{camundaOperateUrl + '/#/instances?filter={%22active%22:true,%22incidents%22:true,%22completed%22:true,%22canceled%22:true,%22version%22:%222%22,%22workflow%22:%22Process_1%22}&name=Process_1'}" target="_blank"> Open in Camunda Operate</a>
 	</div>
 </main>
