@@ -58,5 +58,65 @@
     "name": "Havanna-Pfanne",
     "url": "https://www.chefkoch.de/rezepte/291361108164449/Havanna-Pfanne.html",
     "image": "https://img.chefkoch-cdn.de/rezepte/291361108164449/bilder/1135776/crop-600x400/havanna-pfanne.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Gebratene Knödel mit Speck und Zwiebeln",
+    "url": "https://www.chefkoch.de/rezepte/2597881408083270/Gebratene-Knoedel-mit-Speck-und-Zwiebeln.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/2597881408083270/bilder/1242692/crop-600x400/gebratene-knoedel-mit-speck-und-zwiebeln.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Omas Pizzasuppe",
+    "url": "https://www.chefkoch.de/rezepte/845091189864506/Omas-Pizzasuppe.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/845091189864506/bilder/1350619/crop-600x400/omas-pizzasuppe.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Bandnudeln mit frischem Spinat und Lachs",
+    "url": "https://www.chefkoch.de/rezepte/1677441275813669/Bandnudeln-mit-frischem-Spinat-und-Lachs.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/1677441275813669/bilder/1317607/crop-600x400/bandnudeln-mit-frischem-spinat-und-lachs.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Dieters Gnocchi-Spitzkohl-Pfanne",
+    "url": "https://www.chefkoch.de/rezepte/1374221242295247/Dieters-Gnocchi-Spitzkohl-Pfanne.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/1374221242295247/bilder/1312543/crop-600x400/dieters-gnocchi-spitzkohl-pfanne.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Gnocchi in Spinat-Frischkäse-Soße",
+    "url": "https://www.chefkoch.de/rezepte/1958291318524674/Gnocchi-in-Spinat-Frischkaese-Sosse.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/1958291318524674/bilder/1284830/crop-600x400/gnocchi-in-spinat-frischkaese-sosse.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Gnocchi-Salat mit Pinienkernen und getrockneten Tomaten",
+    "url": "https://www.chefkoch.de/rezepte/1324711237332453/Gnocchi-Salat-mit-Pinienkernen-und-getrockneten-Tomaten.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/1324711237332453/bilder/949196/crop-600x400/gnocchi-salat-mit-pinienkernen-und-getrockneten-tomaten.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Rigatoni al forno mit Schinken - Sahne - Soße",
+    "url": "https://www.chefkoch.de/rezepte/540871151408358/Rigatoni-al-forno-mit-Schinken-Sahne-Sosse.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/540871151408358/bilder/708266/crop-600x400/rigatoni-al-forno-mit-schinken-sahne-sosse.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Hühnchen-Nudel-Pfanne Elgar",
+    "url": "https://www.chefkoch.de/rezepte/1752741284791296/Huehnchen-Nudel-Pfanne-Elgar.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/1752741284791296/bilder/814363/crop-600x400/huehnchen-nudel-pfanne-elgar.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Low-Carb indisches Hühnchen-Korma",
+    "url": "https://www.chefkoch.de/rezepte/3130961466412520/Low-Carb-indisches-Huehnchen-Korma.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/3130961466412520/bilder/924644/crop-600x400/low-carb-indisches-huehnchen-korma.jpg"
+  },
+  {
+    "id": 20,
+    "name": "LowCarb Hähnchen-Paprika-Auflauf",
+    "url": "https://www.chefkoch.de/rezepte/3238021481715867/LowCarb-Haehnchen-Paprika-Auflauf.html",
+    "image": "https://img.chefkoch-cdn.de/rezepte/3238021481715867/bilder/971110/crop-600x400/lowcarb-haehnchen-paprika-auflauf.jpg"
   }
 ]
