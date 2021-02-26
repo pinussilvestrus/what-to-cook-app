@@ -16,6 +16,15 @@ Head over to [this sketch](https://excalidraw.com/#json=5288444762783744,NxCS_uB
 npm install
 ```
 
+Make sure you configure your Camunda Cloud connection accordingly (cf. [`env.example`](./env.example)):
+
+```text
+ZEEBE_ADDRESS=
+ZEEBE_CLIENT_ID=
+ZEEBE_CLIENT_SECRET=
+CLOUD_CLUSTER_ID=
+```
+
 ## Run
 
 ```
