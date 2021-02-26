@@ -4,6 +4,8 @@ const Koa = require('koa');
 
 const Router = require('@koa/router');
 
+const cors = require('@koa/cors');
+
 const { ZBClient } = require('zeebe-node');
 
 const clientId = process.env.ZEEBE_CLIENT_ID;
@@ -28,6 +30,8 @@ const zbc = new ZBClient({
 
 const app = new Koa();
 
+app.use(cors());
+
 const router = new Router();
 
 router.get('/fetch', async (context) => {
@@ -39,7 +43,11 @@ router.get('/fetch', async (context) => {
     bpmnProcessId: 'Process_1'
   });
 
-  context.body = result;
+  const {
+    variables
+  } = result;
+
+  context.body = variables.recipes;
 });
 
 app.use(router.routes());

@@ -6,9 +6,10 @@
     "all": "run-s build test",
     "test": "run-s lint",
     "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "build:watch": "rollup -c -w",
     "serve": "serve public",
-    "start": "run-p dev serve",
+    "start": "run-s build serve",
+    "dev": "run-p build:watch serve",
     "lint": "eslint --ext js,svelte ."
   },
   "devDependencies": {

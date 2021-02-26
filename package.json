@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "lerna bootstrap",
     "start": "lerna run start --stream",
-    "all": "lerna run all --stream"
+    "all": "lerna run all --stream",
+    "dev": "lerna run dev --stream"
   },
   "repository": {
     "type": "git",

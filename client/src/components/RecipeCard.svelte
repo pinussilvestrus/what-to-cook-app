@@ -16,6 +16,10 @@
       font-size: 32px;
     }
 
+    a {
+      text-decoration: none;
+    }
+
     &:hover {
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }

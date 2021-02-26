@@ -3,21 +3,30 @@
 
 	import Diagram from './components/Diagram.svelte';
 
-	import TEST_RECIPES from '../../resources/recipes.json';
-
 	import diagramXML from '../../resources/diagram.bpmn';
 
 	const clusterId = process.env.CLOUD_CLUSTER_ID;
 
 	const orgaId = process.env.CLOUD_ORGA_ID;
 
-	const CAMUNDA_CLOUD_URL = `https://console.cloud.camunda.io/org/${orgaId}/`;
+	const serverUrl = process.env.camundaCloudUrl || 'http://localhost:3000';
 
-	// TODO: fetch from server
-	let recipes = TEST_RECIPES;
+	const camundaCloudUrl = `https://console.cloud.camunda.io/org/${orgaId}/`;
 
+	const fetchRecipes = async () => {
+		const response = await fetch(`${serverUrl}/fetch`);
+
+		if(response.ok) {
+			recipes = await response.json();
+		}
+	}
+
+	const handleReloadRecipes = (event) => {
+		fetchRecipes();
+	}
+
+	let recipes = [];
 </script>
-
 
 <style lang="scss">
 	main {
@@ -29,18 +38,32 @@
 
 	.header {
 		h1 {
-			color: #394F8A;
 			font-size: 4em;
 			font-weight: 200;
 		}
 	}
 
-	.recipes {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
- 		grid-auto-rows: auto;
-		grid-gap: 3rem;
-		padding: 0 5rem 2rem 5rem;
+	.recipes-container {
+		padding: 0 10rem 2rem 10rem;
+
+		.recipes {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-auto-rows: auto;
+			grid-gap: 3rem;
+		}
+
+		.empty-recipes {
+			font-size: larger;
+			font-style: italic;
+		}
+
+		.btn-reload {
+			margin-bottom: 2rem;
+			font-size: 1.2rem;
+    	height: 3rem;
+    	width: 12rem;
+		}
 	}
 
 	.cloud-connection {
@@ -66,10 +89,19 @@
 		<h1>What to cook next week?</h1>
 	</div>
 
-	<div class="recipes">
-		{#each recipes as r}
-			<RecipeCard recipe={r} />
-		{/each}
+	<div class="recipes-container">
+		<button class="btn btn-primary btn-reload" on:click={handleReloadRecipes}>Reload recipes</button>
+
+		{#if recipes.length}
+			<div class="recipes">
+				{#each recipes as r}
+					<RecipeCard recipe={r} />
+				{/each}
+			</div>
+		{:else}
+			<div class="empty-recipes">No recipes - reload needed.</div>
+		{/if}
+
 	</div>
 
 	<hr />
@@ -78,7 +110,7 @@
 		<h2>Powered by Camunda Cloud</h2>
 
 		<p>Cluster: <a 
-				href="{CAMUNDA_CLOUD_URL + 'cluster/' + clusterId}" 
+				href="{camundaCloudUrl + 'cluster/' + clusterId}" 
 				target="_blank" 
 				class="pill">{clusterId}</a>
 		</p>
