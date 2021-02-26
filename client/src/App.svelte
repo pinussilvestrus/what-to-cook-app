@@ -17,30 +17,30 @@
 
 	const camundaOperateUrl = `https://${clusterId}.operate.camunda.io`;
 
- 	// state
+	// state
 	let recipes = [];
 	let clusterIsReady = false;
 
 	const fetchRecipes = async () => {
-		const response = await fetch(`${serverUrl}/fetch`);
+	  const response = await fetch(`${serverUrl}/fetch`);
 
-		if(response.ok) {
-			recipes = await response.json();
-		}
+	  if (response.ok) {
+	    recipes = await response.json();
+	  }
 	};
 
 	const handleReloadRecipes = (event) => {
-		fetchRecipes();
+	  fetchRecipes();
 	};
 
 	const checkClusterStatus = async () => {
-		const response = await fetch(`${serverUrl}/ping`);
+	  const response = await fetch(`${serverUrl}/ping`);
 
-		clusterIsReady = response.ok;
+	  clusterIsReady = response.ok;
 	};
 
 	onMount(async () => {
-		await checkClusterStatus();
+	  await checkClusterStatus();
 	});
 </script>
 
